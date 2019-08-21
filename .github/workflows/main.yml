@@ -10,7 +10,9 @@ jobs:
     steps:
     - name: Build image
       uses: "actions/docker/cli@master"
-      args: "build -t oisinaylward.me:5000/personal-website ."
+      with:
+        args: "build -t oisinaylward.me:5000/personal-website ."
     - name: Push image
       uses: "actions/docker/cli@master"
-      args: "push oisinaylward.me:5000/personal-website"
+      with:
+        args: "push oisinaylward.me:5000/personal-website"
