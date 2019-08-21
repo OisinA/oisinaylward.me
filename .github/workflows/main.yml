@@ -1,0 +1,12 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Build image
+      uses: docker://oisinaylward.me:5000/personal-website:latest
