@@ -1,0 +1,18 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Build image
+      uses: "actions/docker/cli@master"
+      with:
+        args: "build -t oisinaylward.me:5000/personal-website ."
+    - name: Push image
+      uses: "actions/docker/cli@master"
+      with:
+        args: "push oisinaylward.me:5000/personal-website"
