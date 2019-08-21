@@ -14,7 +14,7 @@ jobs:
       with:
         args: "build -t oisinaylward.me:5000/personal-website ."
     - name: Add registry
-      run: "echo '{\n\"insecure-registries\": [\"oisinaylward.me:5000\"]\n}' >> /etc/docker/daemon.json"
+      run: "sudo echo '{\n\"insecure-registries\": [\"oisinaylward.me:5000\"]\n}' >> /etc/docker/daemon.json"
     - name: Push image
       uses: "actions/docker/cli@master"
       with:
