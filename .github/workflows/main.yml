@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: OisinA/oisinaylward.me
+    - uses: actions/checkout@v1
     - name: Build image
       uses: "actions/docker/cli@master"
       with:
