@@ -9,6 +9,7 @@ jobs:
     
     steps:
     - name: Build image
+      uses: OisinA/oisinaylward.me
       uses: "actions/docker/cli@master"
       with:
         args: "build -t oisinaylward.me:5000/personal-website ."
