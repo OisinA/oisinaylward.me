@@ -6,16 +6,12 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v1
-    - name: Build image
-      uses: "actions/docker/cli@master"
-      with:
-        args: "build -t oisinaylward.me:5000/personal-website ."
-    - name: Add registry
-      run: "sudo echo '{\n\"insecure-registries\": [\"oisinaylward.me:5000\"]\n}' >> /etc/docker/daemon.json"
-    - name: Push image
-      uses: "actions/docker/cli@master"
-      with:
-        args: "push oisinaylward.me:5000/personal-website"
+      - uses: actions/checkout@master
+      - name: Publish to Registry
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: OisinA/oisinaylward.me
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          registry: docker.pkg.github.com
