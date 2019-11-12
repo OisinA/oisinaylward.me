@@ -11,5 +11,5 @@ jobs:
         run: docker login docker.pkg.github.com -u {{ secrets.DOCKER_USERNAME }} -p {{ secrets.DOCKER_PASSWORD }}
       - name: Build
         run: docker build -t docker.pkg.github.com/OisinA/oisinaylward.me/oisinaylward.me .
-      - push: Push
+      - name: Push
         run: docker push docker.pkg.github.com/OisinA/oisinaylward.me/oisinaylward.me
