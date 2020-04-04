@@ -9,3 +9,10 @@
       cmd: /bin/zephyrus index.htz index.html
     args:
       chdir: oisinaylward.me
+  - name: Create public_html
+    file:
+      path: public_html
+      state: directory
+  - name: Move index.html
+    shell:
+      cmd: mv oisinaylward.me/index.html public_html/index.html
