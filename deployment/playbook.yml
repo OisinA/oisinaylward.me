@@ -9,4 +9,3 @@
       cmd: /bin/zephyrus index.htz index.html
     args:
       chdir: oisinaylward.me
-      creates: index.html
