@@ -71,7 +71,7 @@ html(lang="en") {
                         a(href="https://ie.linkedin.com/in/oisin-aylward-882b7816b") { "linkedin" }
                     }
                     li {
-                        email - oisin at aylward dot email
+                        "email - oisin at aylward dot email"
                     }
                 }
             }
