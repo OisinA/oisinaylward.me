@@ -52,6 +52,9 @@ html(lang="en") {
                     li {
                         a(href="https://github.com/OisinA/dionysus") { "dionysus" } " - a competitive coding platform."
                     }
+		    li {
+			a(href="https://github.com/OisinA/zephyrus") { "zephyrus" } " - an alternative HTML."
+		    }
                 }
             }
         }
