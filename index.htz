@@ -52,9 +52,9 @@ html(lang="en") {
                     li {
                         a(href="https://github.com/OisinA/dionysus") { "dionysus" } " - a competitive coding platform."
                     }
-		    li {
-			a(href="https://github.com/OisinA/zephyrus") { "zephyrus" } " - an alternative HTML."
-		    }
+		            li {
+			            a(href="https://github.com/OisinA/zephyrus") { "zephyrus" } " - an alternative HTML."
+		            }
                 }
             }
         }
@@ -66,6 +66,9 @@ html(lang="en") {
                 ul {
                     li {
                         a(href="http://twitter.com/oisinaylward") { "twitter" }
+                    }
+                    li {
+                        a(href="https://ie.linkedin.com/in/oisin-aylward-882b7816b") { "linkedin" }
                     }
                 }
             }
