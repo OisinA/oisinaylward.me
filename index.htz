@@ -59,7 +59,7 @@ html(lang="en") {
             }
         }
 
-        # Footer
+        # Social Media
         div(class="section") {
             div(class="container") {
                 h5(class="header") { "social media" }
