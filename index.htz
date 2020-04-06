@@ -29,7 +29,7 @@ html(lang="en") {
                     h2(class="header s12 light") {
                         "software developer"
                     }
-                    h2(class="header s12 light") {
+                    h5(class="s12 light") {
                         "incoming "
                         a(href="https://netsoc.co") {
                             "netsoc"
