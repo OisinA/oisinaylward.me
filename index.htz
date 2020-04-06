@@ -35,10 +35,6 @@ html(lang="en") {
                     }
                 }
             }
-
-            div(class="container light center") {
-                p { "interested in deployment, scalable software and networking." }
-            }
         }
 
         # Projects Section
