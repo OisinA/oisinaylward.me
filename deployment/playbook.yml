@@ -16,3 +16,6 @@
   - name: Move index.html
     shell:
       cmd: mv oisinaylward.me/index.html public_html/index.html
+  - name: Move images
+    shell:
+      cmd: mv oisinaylward.me/*.jpg public_html/
