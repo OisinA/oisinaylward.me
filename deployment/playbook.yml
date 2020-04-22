@@ -4,11 +4,11 @@
   tasks:
   - name: Pull latest version
     git: repo=git@github.com:OisinA/oisinaylward.me.git dest=oisinaylward.me
-  - name: Convert HTZ to HTML
-    shell: 
-      cmd: /bin/zephyrus index.htz index.html
-    args:
-      chdir: oisinaylward.me
+  # - name: Convert HTZ to HTML
+  #   shell: 
+  #     cmd: /bin/zephyrus index.htz index.html
+  #   args:
+  #     chdir: oisinaylward.me
   - name: Create public_html
     file:
       path: public_html
